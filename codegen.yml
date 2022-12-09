@@ -1,0 +1,42 @@
+schema: https://countries.trevorblades.com/graphql
+documents:
+ - "./src/graphql/**/*.js"
+ - "./src/graphql/**/*.gql"
+generates:
+  ./src/graphql/types/index.ts:
+    plugins:
+      - add:
+          content: "/* eslint-disable @typescript-eslint/no-redeclare */"
+      - typescript
+      - typescript-operations
+
+  ./src/graphql/hooks/index.ts:
+    plugins:
+      - typescript-react-apollo
+    config:
+      withComponent: false
+      withHOC: false
+      withHooks: true
+      apolloClientVersion: 3
+      reactApolloVersion: 3
+      importOperationTypesFrom: import('../types')
+
+  # For mock
+  ./src/graphql/types/index.mock.ts:
+    plugins:
+      - add:
+          content: "/* eslint-disable @typescript-eslint/no-redeclare */"
+      - typescript
+      - typescript-operations
+    config:
+      skipTypename: false
+
+config:
+  scalars:
+    Time: string
+    Cursor: string
+  skipTypename: true
+  preResolveTypes: true
+  maybeValue: T | null
+  avoidOptionals:
+    field: true
