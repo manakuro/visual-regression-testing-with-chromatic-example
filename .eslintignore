@@ -1,0 +1,4 @@
+src/graphql/types/index.ts
+src/graphql/types/index.mock.ts
+src/graphql/hooks/index.ts
+src/graphql/**/*.gql
