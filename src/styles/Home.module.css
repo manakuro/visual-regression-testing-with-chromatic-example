@@ -70,11 +70,12 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 960px;
 }
 
 .card {
-  margin: 1rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -82,7 +83,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: calc(50% - 1rem);
 }
 
 .card:hover,
