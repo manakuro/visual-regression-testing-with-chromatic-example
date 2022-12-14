@@ -30,7 +30,6 @@ export const Countries: React.FC = () => {
             >
               <h2>{c.name}</h2>
               <p>emoji: {c.emoji}</p>
-              <p>currency: {c.currency}</p>
             </a>
           ))}
         </div>
