@@ -29,7 +29,8 @@ export const Countries: React.FC = () => {
               key={c.name}
             >
               <h2>{c.name}</h2>
-              <p>emoji: {c.emoji}</p>
+              <p>capital: {c.capital}</p>
+              <p>currency: {c.currency}</p>
             </a>
           ))}
         </div>
