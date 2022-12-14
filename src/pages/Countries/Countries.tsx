@@ -6,7 +6,7 @@ import { useCountriesQuery } from 'src/graphql/hooks'
 
 export const Countries: React.FC = () => {
   const { data } = useCountriesQuery()
-  const countries = (data?.countries || []).slice(0, 10)
+  const countries = (data?.countries || []).slice(0, 20)
 
   return (
     <div className={styles.container}>
@@ -27,6 +27,7 @@ export const Countries: React.FC = () => {
               href="https://nextjs.org/docs"
               className={styles.card}
               key={c.name}
+              aria-label={c.name}
             >
               <h2>{c.name}</h2>
               <p>capital: {c.capital}</p>
