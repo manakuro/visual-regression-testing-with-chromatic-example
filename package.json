@@ -10,7 +10,8 @@
     "codegen": "graphql-codegen",
     "tsc": "tsc",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic"
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
@@ -43,6 +44,7 @@
     "@types/eslint-plugin-prettier": "^3.1.0",
     "@types/prettier": "^2.4.4",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.13.0",
     "deepmerge": "^4.2.2",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
