@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from 'src/styles/Home.module.css'
 import React from 'react'
-import {useCountriesQuery} from "src/graphql/hooks";
+import { useCountriesQuery } from 'src/graphql/hooks'
 
 export const Countries: React.FC = () => {
   const { data } = useCountriesQuery()
@@ -19,19 +19,20 @@ export const Countries: React.FC = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Countries page</h1>
 
-        <p className={styles.description}>
-          Countries list{' '}
-        </p>
+        <p className={styles.description}>Countries list </p>
 
         <div className={styles.grid}>
           {countries.map((c) => (
-            <a href="https://nextjs.org/docs" className={styles.card} key={c.name}>
+            <a
+              href="https://nextjs.org/docs"
+              className={styles.card}
+              key={c.name}
+            >
               <h2>{c.name}</h2>
               <p>emoji: {c.emoji}</p>
               <p>currency: {c.currency}</p>
             </a>
           ))}
-
         </div>
       </main>
 

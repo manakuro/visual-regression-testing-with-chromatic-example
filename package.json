@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "codegen": "graphql-codegen",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
@@ -24,18 +26,35 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.5",
     "@graphql-codegen/add": "^3.2.3",
     "@graphql-codegen/cli": "^2.16.1",
     "@graphql-codegen/typescript": "^2.8.5",
     "@graphql-codegen/typescript-operations": "^2.5.10",
     "@graphql-codegen/typescript-react-apollo": "^3.3.7",
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-interactions": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/builder-webpack5": "^6.5.14",
+    "@storybook/manager-webpack5": "^6.5.14",
+    "@storybook/react": "^6.5.14",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/prettier": "^2.4.4",
+    "babel-loader": "^8.3.0",
     "deepmerge": "^4.2.2",
-    "msw": "^0.49.2",
-    "utility-types": "^3.10.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-storybook": "^0.6.8",
+    "msw": "^0.49.2",
+    "msw-storybook-addon": "^1.6.3",
     "prettier": "^2.6.2",
-    "@types/prettier": "^2.4.4",
-    "@types/eslint-plugin-prettier": "^3.1.0"
+    "storybook-addon-next-router": "^4.0.2",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "utility-types": "^3.10.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
