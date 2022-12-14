@@ -6,7 +6,7 @@ import { useCountriesQuery } from 'src/graphql/hooks'
 
 export const Countries: React.FC = () => {
   const { data } = useCountriesQuery()
-  const countries = (data?.countries || []).slice(0, 10)
+  const countries = (data?.countries || []).slice(0, 20)
 
   return (
     <div className={styles.container}>
