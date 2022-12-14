@@ -27,6 +27,7 @@ export const Countries: React.FC = () => {
               href="https://nextjs.org/docs"
               className={styles.card}
               key={c.name}
+              aria-label={c.name}
             >
               <h2>{c.name}</h2>
               <p>capital: {c.capital}</p>
