@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a example of [Automating UI Feedback and Visual Testing in Web Applications](https://betterprogramming.pub/automating-ui-feedback-and-visual-testing-in-web-applications-d91f687a2840).
 
 ## Getting Started
 
